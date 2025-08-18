@@ -1,0 +1,42 @@
+========Consultas Simples============
+
+Buscar pelo nome:
+http://localhost:8080/produtos/buscarPorNome?valor=Cadeira
+http://localhost:8080/produtos/buscarPorNomeTerminandoCom?valor=Gamer
+http://localhost:8080/produtos/buscarPorNomeEStatus?nome=Notebook&status=Disponível
+http://localhost:8080/produtos/buscarPorNomeComecandoCom?valor=Fone
+http://localhost:8080/produtos/buscarPorNomeContendo?valor=Caixa
+
+
+Busca pelo preço:
+http://localhost:8080/produtos/buscarPorPreco?valor=200.0
+http://localhost:8080/produtos/buscarPorPrecoMaiorQue?valor=500.0
+http://localhost:8080/produtos/buscarPorPrecoMenorQue?valor=100.0
+http://localhost:8080/produtos/buscarTotalPreco
+
+Busca por quantidade:
+http://localhost:8080/produtos/buscarPorQuantidade?valor=50
+http://localhost:8080/produtos/buscarPorQuantidadeMaiorQue?valor=15
+http://localhost:8080/produtos/buscarPorQuantidadeMenorQue?valor=10
+
+
+
+========Consultas avançadas===================
+
+Busca por Status Específico
+http://localhost:8080/produtos/buscarPorStatus?valor=Disponível
+
+Busca por Produtos Sem Status (null)
+http://localhost:8080/produtos/buscarPorStatusNulos
+
+Busca por Preço e Status
+http://localhost:8080/produtos/buscarPorPrecoEStatus?preco=200.0&status=Disponível
+
+Busca pelo Total de Produtos
+http://localhost:8080/produtos/contarTotalDeProdutos
+
+Busca por Status Padrão
+http://localhost:8080/produtos/buscarPorStatusPadrao?valor=Indisponível
+
+Exemplo de Busca com Status Padrão Disponível:
+http://localhost:8080/produtos/buscarPorStatusPadrao
